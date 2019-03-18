@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="radius" format="dimension|integer" />
+
+    <declare-styleable name="ArrowRectangleView">
+        <attr name="arrow_width" format="dimension" />
+        <attr name="arrow_height" format="dimension" />
+        <attr name="arrow_offset" format="dimension" />
+        <attr name="radius" />
+        <attr name="background_color" format="color" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_thickness" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SlideLayout">
+        <attr name="slideSlop" format="dimension" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="TitleBarView">
+        <attr name="left_visible" format="boolean" />
+        <attr name="left_img" format="reference|color" />
+        <attr name="left_text" format="string" />
+        <attr name="right_visible" format="boolean" />
+        <attr name="right_img" format="reference|color" />
+        <attr name="right_text" format="string" />
+        <attr name="title_text" format="string" />
+    </declare-styleable>
+
+    <declare-styleable name="SearchBarAnimView">
+        <attr name="search_text" format="string"/>
+        <attr name="enable" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ItemHomeView">
+        <attr name="name" format="string" />
+        <attr name="info" format="string" />
+        <attr name="icon" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="EmptyTipView">
+        <attr name="tip_text" format="string" />
+        <attr name="tip_img" format="reference" />
+    </declare-styleable>
+
+    <declare-styleable name="RoundLayout">
+        <attr name="radius" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,11 @@
+version:3.5.0
+基于xUtils框架,修改内容
+20180509 Selector 增加setGroupBy方法.
+20180509 LogUtil 增加方法 public static void d(String content, Object... args)
+20180509 LogUtil 增加方法 public static void e(Throwable tr)
+20180509 LogUtil 修改 LogUtils.e 为始终打印,不受x.isDebug()控制.
+20180509 AbsTask 修改抽象方法 onSuccess, onError 为非抽象方法
+20180509 UriRequest 修改构造方法为public
+20180517 ViewInjectorImpl.inject(Activity activity) 修改反射设置ContentView为activity.setContentView
+20180517 EventListenerManager 修改防频繁点击机制的时间为SystemClock.uptimeMillis()
+20180517 修改LogUtil.generateTag()中 new Throwable().getStackTrace() 为 Thread.currentThread().getStackTrace()

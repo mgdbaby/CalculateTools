@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">CalculateTools</string>
+
+    <string name="permission_setting">权限设置</string>
+    <string name="rational_message">此功能需要您授权，否则将不能正常使用</string>
+    <string name="tip_no_permission">获取必要权限失败,部分功能将无法使用</string>
+    <string name="close">关闭</string>
+    <string name="i_known">我知道了</string>
+</resources>
