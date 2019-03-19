@@ -1,9 +1,75 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="colorPrimary">#3F51B5</color>
-    <color name="colorPrimaryDark">#303F9F</color>
-    <color name="colorAccent">#FF4081</color>
 
-    <color name="text_gray_666666">#323232</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorPrimary">#007aff</color>
+    <color name="colorPrimaryDark">#007aff</color>
+
+    <color name="tab_text">#B2B2B2</color>
+    <color name="tab_text_selected">#007AFF</color>
+
+    <color name="title_bar_bg">#F9F9F9</color>
+    <color name="white_pressed_bg">#FAFAFA</color>
+
+    <color name="text_blue_pressed">#ACD6FF</color>
+    <color name="text_blue_normal">#007AFF</color>
+    <color name="text_btn_disable">#76B9FC</color>
+    <color name="bg_not_default_sms">#ACD5FF</color>
+
+    <color name="text_red_pressed">#FFAEAD</color>
+    <color name="text_red_normal">#FF0101</color>
+
+    <color name="text_black">#323232</color>
+    <color name="text_gray">#FF8F8E94</color>
+    <color name="text_gray_eight">#80000000</color>
+
+    <color name="btn_bg_blue_pre">#0081FF</color>
+    <color name="btn_bg_blue_nor">#76B9FC</color>
+    <color name="blue_lock_color">#FFACD6FF</color>
+    <color name="green_lock_color">#FF89E783</color>
+    <color name="red_lock_color">#FFFF8686</color>
+
+    <color name="red">#FF0101</color>
+    <color name="blue">#007AFF</color>
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+    <color name="black_30">#b2000000</color>
+    <color name="bg_color">#EFEFEF</color>
+
+    <color name="line_color">#ACACAC</color>
+    <color name="hint_color">#8E8E93</color>
+    <color name="white_90">#E5F9F9F9</color>
+    <color name="menu_bg">#2A2A2A</color>
+    <color name="menu_hover">#AAAAAA</color>
+
+    <color name="input_mobile_hint">#8e8e93</color>
+
+    <color name="dlg_bg_white">#66EEEEEE</color>
+
+    <color name="line_gray">#FF979797</color>
+
+    <color name="new_msg_bg">#33000000</color>
+    <color name="new_msg_white">#ffffff</color>
+
+    <color name="new_msg_dark_gray">#8b8b8b</color>
+    <color name="new_msg_red">#ff0000</color>
+    <color name="red_record_cancel">#FF3B30</color>
+
+    <color name="new_msg_gray">#8f8e94</color>
+    <color name="new_send_text">#007aff</color>
+    <color name="new_msg_black">#323232</color>
+
+    <color name="rgb030303">#030303</color>
+    <color name="rgb404040">#404040</color>
     <color name="trans">#00000000</color>
+    <color name="green">#009301</color>
+    <color name="light_green">#0DD001</color>
+
+    <color name="search_bg_enable">#EFEFF4</color>
+    <color name="search_bg_dis_enable">#DBDBE1</color>
+    <color name="search_enable_text">#8F8E94</color>
+    <color name="search_dis_enable_text">#98989D</color>
+
+    <color name="color_vargoaccount">#007aff</color>
+    <color name="color_commonccount">#444444</color>
 </resources>

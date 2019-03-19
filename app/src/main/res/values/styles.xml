@@ -1,11 +1,17 @@
 <resources>
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
-        <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
-        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+    <!--<style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--&lt;!&ndash; Customize your theme here. &ndash;&gt;-->
+        <!--<item name="colorPrimary">@color/colorPrimary</item>-->
+        <!--<item name="colorPrimaryDark">@color/colorPrimaryDark</item>-->
+        <!--<item name="colorAccent">@color/colorAccent</item>-->
+    <!--</style>-->
+
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/title_bar_bg</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
     </style>
 
     <style name="AppTheme.NoActionBar">
@@ -41,5 +47,37 @@
         <item name="android:windowEnterAnimation">@anim/dialog_in</item>
         <item name="android:windowExitAnimation">@anim/dialog_out</item>
     </style>
+
+    <!--底部菜单栏-->
+    <style name="tab_text">
+        <item name="android:background">@color/white</item>
+        <item name="android:textSize">@dimen/bottom_text_size</item>
+        <item name="android:textColor">@drawable/xml_tab_text_color</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:drawablePadding">3dp</item>
+        <item name="android:paddingTop">5dp</item>
+    </style>
+
+    <!--<style name="tip_background">-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">@dimen/tip_circular_size</item>-->
+        <!--<item name="android:minWidth">@dimen/tip_circular_size</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:paddingEnd">2dp</item>-->
+        <!--<item name="android:paddingStart">2dp</item>-->
+        <!--<item name="android:textColor">@color/white</item>-->
+        <!--<item name="android:textSize">@dimen/text_size_ssss</item>-->
+        <!--<item name="android:background">@drawable/xml_msg_tip_bg</item>-->
+    <!--</style>-->
+
+    <!--<style name="text_btn">-->
+        <!--<item name="android:layout_width">wrap_content</item>-->
+        <!--<item name="android:layout_height">wrap_content</item>-->
+        <!--<item name="android:textColor">@drawable/xml_btn_blue_text</item>-->
+        <!--<item name="android:textSize">@dimen/text_size</item>-->
+        <!--<item name="android:gravity">center</item>-->
+        <!--<item name="android:paddingStart">10dp</item>-->
+        <!--<item name="android:paddingEnd">10dp</item>-->
+    <!--</style>-->
 
 </resources>

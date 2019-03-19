@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/root_view"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <FrameLayout
+        android:id="@+id/frame_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/bottom_height" />
+
+    <View
+        android:id="@+id/line_view"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/line_size"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/bottom_height"
+        android:background="@color/line_color" />
+
+    <TextView
+        android:id="@+id/text_msg"
+        style="@style/tab_text"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:drawableTop="@drawable/tab_message"
+        android:enabled="false"
+        android:tag="0"
+        android:text="@string/text_sms" />
+
+    <TextView
+        android:id="@+id/text_group_msg"
+        style="@style/tab_text"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/text_msg"
+        android:drawableTop="@drawable/tab_group"
+        android:tag="1"
+        android:text="@string/text_group" />
+
+    <TextView
+        android:id="@+id/text_circle"
+        style="@style/tab_text"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/text_group_msg"
+        android:drawableTop="@drawable/tab_circle"
+        android:tag="2"
+        android:text="@string/text_circle" />
+
+    <TextView
+        android:id="@+id/text_my"
+        style="@style/tab_text"
+        android:layout_width="60dp"
+        android:layout_height="@dimen/bottom_height"
+        android:layout_alignParentBottom="true"
+        android:layout_toEndOf="@id/text_circle"
+        android:drawableTop="@drawable/tab_my"
+        android:tag="3"
+        android:text="@string/text_my" />
+
+</RelativeLayout>
