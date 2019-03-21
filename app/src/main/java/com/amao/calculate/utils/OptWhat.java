@@ -6,7 +6,7 @@ package com.amao.calculate.utils;
  */
 public interface OptWhat {
 
-    int SHOW_MSG               = 100000;
+    int SELECT_NUM               = 100000;
     int NONE                   = 100001;
     int CONTACTS_CHANGE        = 100002;
     int TRANSFER_REQUEST       = 100003;

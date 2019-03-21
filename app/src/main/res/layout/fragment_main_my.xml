@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <com.amao.calculate.core.widget.TitleBarView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:left_visible="false"
+        app:right_visible="false"
+        app:title_text="@string/text_my" />
+
+    <TextView
+        android:id="@+id/text_status"
+        style="@style/index_no_msg" />
+
+    <!--<View-->
+    <!--style="@style/line_view_common"-->
+    <!--android:layout_marginTop="16dp" />-->
+
+    <!--<FrameLayout-->
+    <!--android:id="@+id/frame_to_login"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="60dp"-->
+    <!--android:background="@drawable/xml_selector_item_click_bg">-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/image_user_avatar"-->
+    <!--android:layout_width="43.33dp"-->
+    <!--android:layout_height="43.33dp"-->
+    <!--android:layout_gravity="center_vertical"-->
+    <!--android:layout_marginStart="15dp"-->
+    <!--android:src="@drawable/def_head" />-->
+
+    <!--<LinearLayout-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:orientation="vertical"-->
+    <!--android:paddingStart="70dp">-->
+
+    <!--<TextView-->
+    <!--android:id="@+id/text_user_name"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_marginTop="8dp"-->
+    <!--android:maxLines="1"-->
+    <!--android:singleLine="true"-->
+    <!--android:text="@string/not_login"-->
+    <!--android:textColor="@color/text_black"-->
+    <!--android:textSize="@dimen/text_size" />-->
+    <!--<TextView-->
+    <!--android:id="@+id/text_phone_number"-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:text="@string/click_to_login"-->
+    <!--android:textSize="@dimen/text_size_s" />-->
+
+    <!--</LinearLayout>-->
+
+
+    <!--<ImageView-->
+    <!--android:layout_width="wrap_content"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--android:layout_gravity="end|center_vertical"-->
+    <!--android:layout_marginEnd="5dp"-->
+    <!--android:src="@drawable/ic_more" />-->
+
+    <!--<ImageView-->
+    <!--android:id="@+id/img_qr_code"-->
+    <!--android:layout_width="20dp"-->
+    <!--android:layout_height="20dp"-->
+    <!--android:layout_gravity="end|center_vertical"-->
+    <!--android:layout_marginEnd="40dp"-->
+    <!--android:src="@drawable/xml_selector_qr_code" />-->
+
+    <!--</FrameLayout>-->
+
+    <!--<View-->
+    <!--style="@style/line_view_common"-->
+    <!--android:layout_marginBottom="15dp" />-->
+
+
+    <!--<com.amao.calculate.core.widget.ItemMoreView-->
+    <!--android:id="@+id/text_share_vargom"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="false"-->
+    <!--app:title="@string/share_VargoM" />-->
+
+    <!--<com.amao.calculate.core.widget.ItemMoreView-->
+    <!--android:id="@+id/text_help_and_feedback"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="false"-->
+    <!--app:title="@string/help_and_feedback" />-->
+
+    <!--<com.amao.calculate.core.widget.ItemMoreDescView-->
+    <!--android:id="@+id/text_safe_protect_no"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="false"-->
+    <!--app:title="@string/start_security_protection" />-->
+
+    <!--<com.amao.calculate.core.widget.ItemMoreView-->
+    <!--android:id="@+id/text_new_msg_no"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="false"-->
+    <!--app:title="@string/new_msg_notice" />-->
+
+    <!--<com.amao.calculate.core.widget.ItemMoreView-->
+    <!--android:id="@+id/text_setting"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="true"-->
+    <!--app:title="@string/setting" />-->
+
+    <!--<View-->
+    <!--android:id="@+id/view_about_top"-->
+    <!--style="@style/line_view_common"-->
+    <!--android:layout_marginTop="15dp" />-->
+
+    <!--<com.amao.calculate.core.widget.ItemMoreView-->
+    <!--android:id="@+id/text_about"-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="wrap_content"-->
+    <!--app:line_fill="true"-->
+    <!--app:title="@string/about_vargoM" />-->
+
+</LinearLayout>

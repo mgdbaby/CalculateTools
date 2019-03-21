@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:statusBarColor">@color/title_bar_bg</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+    <style name="AppTheme_blue_title_bar" parent="AppTheme">
+        <item name="android:statusBarColor">@color/blue</item>
+    </style>
+
+    <style name="TransparentStatusBar" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowLightStatusBar" tools:ignore="NewApi">true</item>
+        <item name="colorPrimary">@color/title_bar_bg</item>
+        <item name="colorPrimaryDark">@color/title_bar_bg</item>
+        <item name="colorAccent">@color/title_bar_bg</item>
+        <item name="android:windowEnableSplitTouch">false</item>
+        <item name="android:splitMotionEvents">false</item>
+    </style>
+
+</resources>

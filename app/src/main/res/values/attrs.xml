@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<resources>
+    <attr name="siArrowPosition">
+        <enum name="left" value="0" />
+        <enum name="right" value="1" />
+    </attr>
+    <attr name="siBorderType">
+        <enum name="stroke" value="0" />
+        <enum name="fill" value="1" />
+    </attr>
+    <attr name="siStrokeCap">
+        <enum name="butt" value="0" />
+        <enum name="round" value="1" />
+        <enum name="square" value="2" />
+    </attr>
+    <attr name="siStrokeJoin">
+        <enum name="bevel" value="0" />
+        <enum name="miter" value="1" />
+        <enum name="round" value="2" />
+    </attr>
+    <declare-styleable name="ShaderImageView">
+        <attr name="siSquare" format="boolean" />
+        <attr name="siBorderColor" format="color" />
+        <attr name="siBorderWidth" format="dimension" />
+        <attr name="siBorderAlpha" format="float" />
+        <attr name="siForeground" format="integer|reference" />
+        <!-- Rounded Image View -->
+        <attr name="siRadius" format="dimension" />
+        <!--BubbleImageView-->
+        <attr name="siArrowPosition"/>
+        <attr name="siTriangleHeight" format="dimension"/>
+        <!--PorterImageView-->
+        <attr name="siShape" format="integer|reference" />
+        <!--ShaderImageView-->
+        <attr name="siBorderType"/>
+        <attr name="siStrokeCap"/>
+        <attr name="siStrokeJoin"/>
+        <attr name="siStrokeMiter" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="IndexBar">
+        <attr name="indexBarTextSize" format="dimension" />
+        <attr name="indexBarPressBackground" format="color" />
+    </declare-styleable>
+
+    <declare-styleable name="KPSwitchPanelLayout">
+        <attr name="ignore_recommend_height" format="boolean" />
+    </declare-styleable>
+
+    <declare-styleable name="ArrowRectangleView">
+        <attr name="arrow_width" format="dimension" />
+        <attr name="arrow_height" format="dimension" />
+        <attr name="arrow_offset" format="dimension" />
+        <attr name="radius" format="dimension" />
+        <attr name="background_color" format="color" />
+        <attr name="shadow_color" format="color" />
+        <attr name="shadow_thickness" format="dimension" />
+    </declare-styleable>
+
+    <item name="tag1" type="id"/>
+
+    <declare-styleable name="SlideLayout">
+        <attr name="slideSlop" format="dimension" />
+        <attr name="duration" format="integer" />
+    </declare-styleable>
+
+
+    <!-- LockPatternView class attributes -->
+    <declare-styleable name="LockPatternView">
+        <!--Aspect to use when drawing LockPatternView. Choices are "square"(default), "lock_width"
+             or "lock_height"-->
+        <attr name="aspect">
+            <enum name="square" value="0"/>
+            <enum name="lockWidth" value="1"/>
+            <enum name="lockHeight" value="2"/>
+        </attr>
+        <attr name="line" format="color"/>
+        <attr name="btnNormal" format="reference"/>
+        <attr name="btnTouched" format="reference"/>
+        <attr name="circleNormal" format="reference"/>
+        <attr name="circleGreen" format="reference"/>
+        <attr name="circleRed" format="reference"/>
+        <attr name="arrowGreenUp" format="reference"/>
+        <attr name="arrowRedUp" format="reference"/>
+    </declare-styleable>
+</resources>

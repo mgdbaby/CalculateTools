@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">CalculateTools</string>
+    <string name="app_name">计算通</string>
 
     <string name="permission_setting">权限设置</string>
     <string name="rational_message">此功能需要您授权，否则将不能正常使用</string>
@@ -7,9 +7,11 @@
     <string name="close">关闭</string>
     <string name="i_known">我知道了</string>
 
-    <string name="text_sms">短信</string>
-    <string name="text_group">群聊</string>
-    <string name="text_talkie">对讲</string>
-    <string name="text_circle">圈子</string>
+    <string name="text_sms">添加账单</string>
+    <string name="text_group">页面2</string>
+    <string name="text_circle">页面3</string>
     <string name="text_my">我的</string>
+
+    <string name="text_delete">删除</string>
+    <string name="text_no_data">暂无数据</string>
 </resources>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:background="@color/title_bar_bg"
+    tools:layout_height="@dimen/title_bar_height"
+    tools:layout_width="match_parent"
+    tools:parentTag="android.widget.FrameLayout">
+
+    <Button
+        android:id="@+id/btn_left"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:background="@null"
+        android:minWidth="50dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:textColor="@drawable/xml_btn_blue_text"
+        android:textSize="@dimen/text_size" />
+
+    <TextView
+        android:id="@+id/text_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="50dp"
+        android:layout_marginStart="50dp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:maxWidth="180dp"
+        android:textColor="@color/text_black"
+        android:textSize="@dimen/text_size"
+        tools:text="标题" />
+
+    <Button
+        android:id="@+id/btn_right"
+        style="?android:attr/borderlessButtonStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/title_bar_height"
+        android:layout_gravity="end"
+        android:background="@null"
+        android:minWidth="50dp"
+        android:paddingEnd="10dp"
+        android:paddingStart="10dp"
+        android:textAllCaps="false"
+        android:textColor="@drawable/xml_btn_blue_text"
+        android:textSize="@dimen/text_size" />
+
+    <View
+        android:id="@+id/view_line"
+        style="@style/line_view_common"
+        android:layout_gravity="bottom" />
+
+</merge>
