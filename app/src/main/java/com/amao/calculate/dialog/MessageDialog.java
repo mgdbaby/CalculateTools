@@ -54,12 +54,12 @@
 //    private void onBtnFinish(View view) {
 //        dismiss();
 //        if (callback != null) {
-//            callback.onSure();
+//            callback.onClickRight();
 //        }
 //    }
 //
 //    public interface Callback {
-//        void onSure();
+//        void onClickRight();
 //    }
 //
 //}

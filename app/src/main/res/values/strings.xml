@@ -7,6 +7,7 @@
     <string name="close">关闭</string>
     <string name="i_known">我知道了</string>
 
+    <string name="text_contact">联系人</string>
     <string name="text_sms">添加账单</string>
     <string name="text_group">页面2</string>
     <string name="text_circle">页面3</string>
@@ -14,4 +15,12 @@
 
     <string name="text_delete">删除</string>
     <string name="text_no_data">暂无数据</string>
+
+    <string name="text_cancel">取消</string>
+    <string name="text_confirm">确认</string>
+
+    <string name="text_contact_name_null">联系人名字不能为空</string>
+    <string name="text_save_success">保存成功</string>
+    <string name="text_save_fail">保存失败</string>
+    <string name="text_all_contact">所有联系人</string>
 </resources>

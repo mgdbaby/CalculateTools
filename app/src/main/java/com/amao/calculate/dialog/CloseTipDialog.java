@@ -48,7 +48,7 @@
 //    @Event(R.id.btn_cancel)
 //    private void cancel(View view){
 //        if(callback != null){
-//            callback.onCancel();
+//            callback.onClickRight();
 //        }
 //        dismiss();
 //    }
@@ -82,7 +82,7 @@
 //    }
 //
 //    public interface Callback{
-//        void onCancel();
+//        void onClickRight();
 //        void onClose();
 //    }
 //}

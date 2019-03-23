@@ -6,12 +6,14 @@ package com.amao.calculate.utils;
  */
 public interface OptWhat {
 
-    int SELECT_NUM               = 100000;
-    int NONE                   = 100001;
-    int CONTACTS_CHANGE        = 100002;
-    int TRANSFER_REQUEST       = 100003;
+    int NONE = 100000;
+
+    int SELECT_NUM = 100001;
+    int SELECT_CONTACT = 100002;
+
+    int TRANSFER_REQUEST = 100003;
     int TRANSFER_SWITCH_CHANGE = 100004;
-    int BIND_SERVICE_SUCCESS   = 100006;
-    int SPLASH_SHOW_LOGIN      = 100007;
+    int BIND_SERVICE_SUCCESS = 100006;
+    int SPLASH_SHOW_LOGIN = 100007;
 
 }

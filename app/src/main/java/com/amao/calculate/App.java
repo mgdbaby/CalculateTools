@@ -2,11 +2,13 @@ package com.amao.calculate;
 
 import android.app.Application;
 
+import com.amao.calculate.database.DBHelper;
+
 import org.xutils.common.util.LogUtil;
 import org.xutils.x;
 
 /**
- * @TODO 写类注释
+ * Application
  * <br/>
  * <li>Author 毛该得
  * <li>Email maogaide@vargo.com.cn
@@ -22,5 +24,7 @@ public class App extends Application {
 
         LogUtil.customTagPrefix = "Calculate";
         x.Ext.setDebug(true);
+
+        DBHelper.create();
     }
 }

@@ -79,7 +79,7 @@
 //    @Event(R.id.btn_cancel)
 //    private void cancel(View view) {
 //        if (callback != null) {
-//            callback.onCancel();
+//            callback.onClickRight();
 //        }
 //        dismiss();
 //    }
@@ -87,13 +87,13 @@
 //    @Event(R.id.btn_sure)
 //    private void sure(View view) {
 //        if (callback != null) {
-//            callback.onSure();
+//            callback.onClickRight();
 //        }
 //        dismiss();
 //    }
 //
 //    public interface Callback {
-//        void onSure();
-//        void onCancel();
+//        void onClickRight();
+//        void onClickRight();
 //    }
 //}

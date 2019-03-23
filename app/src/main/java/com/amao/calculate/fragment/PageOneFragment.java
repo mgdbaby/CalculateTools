@@ -11,13 +11,20 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 import com.amao.calculate.R;
+import com.amao.calculate.activity.ContactListActivity;
+import com.amao.calculate.activity.ContactNewActivity;
 import com.amao.calculate.bean.DataBean;
 import com.amao.calculate.core.BaseFragment;
 import com.amao.calculate.core.SwitchCase;
 import com.amao.calculate.core.VRecyclerAdapter;
 import com.amao.calculate.core.widget.TitleBarView;
+import com.amao.calculate.database.dao.ContactDao;
+import com.amao.calculate.database.entity.ContactEntity;
+import com.amao.calculate.dialog.Callback;
+import com.amao.calculate.dialog.EditMsgDialog;
 import com.amao.calculate.dialog.SelectNumDialog;
 import com.amao.calculate.utils.OptWhat;
+import com.amao.calculate.utils.StringUtils;
 import com.amao.calculate.utils.TipUtil;
 import com.amao.calculate.viewholder.DataListViewHolder;
 import com.amao.calculate.width.DataItemDecoration;
@@ -39,7 +46,7 @@ import java.util.List;
  * <li>Date 2019/3/20 10:46
  */
 @ContentView(R.layout.fragment_main_one)
-public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlideListener{
+public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlideListener {
 
     @ViewInject(R.id.text_num)
     private TextView textNum;
@@ -47,8 +54,14 @@ public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlide
     @ViewInject(R.id.text_no_data)
     private TextView textNoData;
 
+    @ViewInject(R.id.text_contact_name)
+    private TextView textContactName;
+
     @ViewInject(R.id.edit_money)
     private EditText editMoney;
+
+    @ViewInject(R.id.title_bar)
+    private TitleBarView titleBarView;
 
     @ViewInject(R.id.recycler_order)
     private RecyclerView recyclerOrder;
@@ -57,6 +70,9 @@ public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlide
 
     private VRecyclerAdapter<DataBean> orderAdapter;
     private List<DataBean> orderList;
+
+    private int stage = 0;
+    private int contactId;
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -82,7 +98,39 @@ public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlide
 
     @Event(TitleBarView.RIGHT_ID)
     private void onClickRight(View view) {
-        TipUtil.showShort("点击了添加按钮");
+        toActivity(ContactNewActivity.class);
+    }
+
+    @Event(TitleBarView.LEFT_ID)
+    private void onClickLeft(View view) {
+        final EditMsgDialog dialog = buildDialog(EditMsgDialog.class);
+        dialog.setMessage("设置期数", "请输入期数", null, null);
+        dialog.setCallback(new Callback() {
+            @Override
+            public void onClickRight(Object object) {
+                String data = (String) object;
+                if (StringUtils.isNumeric(data)) {
+                    stage = StringUtils.toInt(data);
+                    titleBarView.setLeftText("第" + data + "期");
+                    dialog.dismiss();
+                } else {
+                    TipUtil.showShort("抱歉，您输入的为非数字，请重新设置");
+                }
+            }
+
+            @Override
+            public void onClickLeft() {
+
+            }
+        });
+        dialog.show();
+    }
+
+    @Event(R.id.layout_contact)
+    private void onClickSelectContact(View view) {
+        List<ContactEntity> contacts = ContactDao.findAllContacts();
+        LogUtil.i("contacts : " + (contacts == null ? " null" : contacts.toString()));
+        toActivity(ContactListActivity.class);
     }
 
     @Event(R.id.text_num)
@@ -117,6 +165,14 @@ public class PageOneFragment extends BaseFragment implements SlideLayout.OnSlide
         if (dataBean != null) {
             curDataBean = dataBean;
             textNum.setText(dataBean.getContent());
+        }
+    }
+
+    @SwitchCase(value = OptWhat.SELECT_CONTACT, info = "选择联系人")
+    private void selectNum(ContactEntity entity) {
+        if (entity != null) {
+            textContactName.setText(entity.getName());
+            contactId = entity.getId();
         }
     }
 

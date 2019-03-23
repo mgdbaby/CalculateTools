@@ -8,9 +8,10 @@
     android:orientation="vertical">
 
     <com.amao.calculate.core.widget.TitleBarView
+        android:id="@+id/title_bar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        app:left_visible="false"
+        app:left_text="设置期数"
         app:title_text="@string/text_sms" />
 
     <RelativeLayout
@@ -19,22 +20,41 @@
         android:background="@color/bg_color"
         android:padding="5dp">
 
-        <EditText
-            android:id="@+id/edit_name"
+        <LinearLayout
+            android:id="@+id/layout_contact"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
-            android:layout_marginEnd="10dp"
-            android:layout_marginStart="10dp"
-            android:text="张三"
-            android:textSize="12sp" />
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:focusable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:layout_margin="10dp"
+                android:background="@drawable/shape_radius_white_stroke"
+                android:elevation="8dp"
+                android:padding="5dp"
+                android:src="@drawable/ic_contact_select" />
+
+            <TextView
+                android:id="@+id/text_contact_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/text_contact"
+                android:textColor="@color/blue" />
+
+        </LinearLayout>
 
         <TextView
             android:id="@+id/text_num"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerVertical="true"
-            android:layout_toEndOf="@+id/edit_name"
+            android:layout_toEndOf="@+id/layout_contact"
             android:background="@drawable/xml_selector_btn_bg_blue_radius"
             android:paddingBottom="5dp"
             android:paddingEnd="10dp"

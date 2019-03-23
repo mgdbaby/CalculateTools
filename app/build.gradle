@@ -16,6 +16,9 @@ android {
         }
     }
     buildTypes {
+        all{
+            buildConfigField("int", "DB_VER", DB_VERSION)
+        }
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'

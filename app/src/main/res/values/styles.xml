@@ -241,19 +241,18 @@
         <item name="android:text">@string/text_no_data</item>
     </style>
 
-    <!--&lt;!&ndash;搜索无结果&ndash;&gt;-->
-    <!--<style name="search_no_msg">-->
-        <!--<item name="android:layout_width">match_parent</item>-->
-        <!--<item name="android:layout_height">match_parent</item>-->
-        <!--<item name="android:background">@color/white</item>-->
-        <!--<item name="android:gravity">center_horizontal</item>-->
-        <!--<item name="android:paddingTop">@dimen/no_content_margin_top</item>-->
-        <!--<item name="android:text">@string/no_search_result</item>-->
-        <!--<item name="android:drawableTop">@drawable/ic_no_content</item>-->
-        <!--<item name="android:drawablePadding">@dimen/no_content_drawable_padding</item>-->
-        <!--<item name="android:textColor">@color/text_gray</item>-->
-        <!--<item name="android:textSize">@dimen/text_size</item>-->
-    <!--</style>-->
+    <!--搜索无结果-->
+    <style name="search_no_msg">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:background">@color/white</item>
+        <item name="android:gravity">center_horizontal</item>
+        <item name="android:paddingTop">@dimen/no_content_margin_top</item>
+        <item name="android:drawableTop">@drawable/ic_no_content</item>
+        <item name="android:drawablePadding">@dimen/no_content_drawable_padding</item>
+        <item name="android:textColor">@color/text_gray</item>
+        <item name="android:textSize">@dimen/text_size</item>
+    </style>
 
     <!--弹框 发送选择附件-->
     <style name="text_select_file">
@@ -309,15 +308,14 @@
         <!--<item name="android:layout_alignBottom">@+id/text_phone</item>-->
     <!--</style>-->
 
-    <!--<style name="edit_common">-->
-        <!--&lt;!&ndash;<item name="android:cursorVisible">true</item>&ndash;&gt;-->
-        <!--<item name="android:maxLines">1</item>-->
-        <!--<item name="android:singleLine">true</item>-->
-        <!--<item name="android:background">@null</item>-->
-        <!--<item name="android:textSize">@dimen/text_size</item>-->
-        <!--<item name="android:textColorHint">@color/text_gray</item>-->
-        <!--<item name="android:textCursorDrawable">@drawable/xml_color_cursor_shape</item>-->
-    <!--</style>-->
+    <style name="edit_common">
+        <item name="android:maxLines">1</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:background">@null</item>
+        <item name="android:textSize">@dimen/text_size</item>
+        <item name="android:textColorHint">@color/text_gray</item>
+        <item name="android:textCursorDrawable">@drawable/xml_color_cursor_shape</item>
+    </style>
 
     <!--<style name="checkbox_style" parent="@android:style/Widget.CompoundButton.CheckBox">-->
         <!--<item name="android:button">@drawable/xml_selector_msg_check</item>-->
